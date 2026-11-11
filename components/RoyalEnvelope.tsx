@@ -286,13 +286,117 @@ export default function RoyalEnvelope({ isOpen, onOpenComplete }: RoyalEnvelopeP
                 }
                 className="absolute top-[49%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-35 flex flex-col items-center"
               >
-                {/* Wax Seal Body */}
-                <div className="relative flex h-20 w-20 sm:h-24 sm:w-24 items-center justify-center rounded-full bg-gradient-to-br from-[#E2C78E] via-[#BA944F] to-[#7B5921] shadow-2xl p-1.5 border-2 border-[#FFF0CB]">
-                  {/* Inner relief circle with monogram */}
-                  <div className="flex h-full w-full items-center justify-center rounded-full bg-gradient-to-tr from-[#98722F] via-[#BA944F] to-[#A8813C] border border-[#FDE6B8] shadow-inner">
-                    <span className="font-ruqaa text-2xl sm:text-3xl font-bold text-[#FFF5DF] drop-shadow-md">
-                      م & ب
-                    </span>
+                {/* Wax Seal Body with Luxury Ornate English Monogram */}
+                <div className="relative flex h-24 w-24 sm:h-28 sm:w-28 items-center justify-center rounded-full bg-gradient-to-br from-[#E8CF96] via-[#BA944F] to-[#74521E] shadow-2xl p-1 border-2 border-[#FFF2D4]">
+                  {/* Inner relief circle with ornate monogram */}
+                  <div className="flex h-full w-full items-center justify-center rounded-full bg-gradient-to-tr from-[#906B2B] via-[#BA944F] to-[#A27B37] border border-[#FDE5B3] shadow-inner overflow-hidden p-0.5">
+                    <svg
+                      viewBox="0 0 120 120"
+                      className="w-full h-full select-none"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <linearGradient id="sealGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stopColor="#FFF7E6" />
+                          <stop offset="30%" stopColor="#E6C88A" />
+                          <stop offset="70%" stopColor="#B38D48" />
+                          <stop offset="100%" stopColor="#FFF0CC" />
+                        </linearGradient>
+                        <filter id="sealEmbossFilter" x="-20%" y="-20%" width="140%" height="140%">
+                          <feDropShadow dx="0.5" dy="1.2" stdDeviation="0.6" floodColor="#3A270D" floodOpacity="0.85" />
+                        </filter>
+                      </defs>
+
+                      {/* Decorative Outer Beaded Ring */}
+                      <circle cx="60" cy="60" r="54" stroke="url(#sealGoldGrad)" strokeWidth="1" strokeDasharray="2.5 3" opacity="0.75" />
+                      <circle cx="60" cy="60" r="49" stroke="url(#sealGoldGrad)" strokeWidth="1.2" opacity="0.9" />
+                      <circle cx="60" cy="60" r="46" stroke="url(#sealGoldGrad)" strokeWidth="0.6" opacity="0.6" />
+
+                      {/* Left Laurel Wreath Branch */}
+                      <path d="M28 60 C28 42 38 29 52 24 M28 60 C28 78 38 91 52 96" stroke="url(#sealGoldGrad)" strokeWidth="1.2" strokeLinecap="round" opacity="0.8" />
+                      <path d="M30 46 C26 44 25 39 29 38 C33 38 33 43 30 46 Z" fill="url(#sealGoldGrad)" opacity="0.85" />
+                      <path d="M35 36 C32 33 33 28 37 28 C40 29 39 34 35 36 Z" fill="url(#sealGoldGrad)" opacity="0.85" />
+                      <path d="M43 28 C41 24 44 20 48 21 C51 23 48 28 43 28 Z" fill="url(#sealGoldGrad)" opacity="0.85" />
+                      <path d="M30 74 C26 76 25 81 29 82 C33 82 33 77 30 74 Z" fill="url(#sealGoldGrad)" opacity="0.85" />
+                      <path d="M35 84 C32 87 33 92 37 92 C40 91 39 86 35 84 Z" fill="url(#sealGoldGrad)" opacity="0.85" />
+                      <path d="M43 92 C41 96 44 100 48 99 C51 97 48 92 43 92 Z" fill="url(#sealGoldGrad)" opacity="0.85" />
+
+                      {/* Right Laurel Wreath Branch */}
+                      <path d="M92 60 C92 42 82 29 68 24 M92 60 C92 78 82 91 68 96" stroke="url(#sealGoldGrad)" strokeWidth="1.2" strokeLinecap="round" opacity="0.8" />
+                      <path d="M90 46 C94 44 95 39 91 38 C87 38 87 43 90 46 Z" fill="url(#sealGoldGrad)" opacity="0.85" />
+                      <path d="M85 36 C88 33 87 28 83 28 C80 29 81 34 85 36 Z" fill="url(#sealGoldGrad)" opacity="0.85" />
+                      <path d="M77 28 C79 24 76 20 72 21 C69 23 72 28 77 28 Z" fill="url(#sealGoldGrad)" opacity="0.85" />
+                      <path d="M90 74 C94 76 95 81 91 82 C87 82 87 77 90 74 Z" fill="url(#sealGoldGrad)" opacity="0.85" />
+                      <path d="M85 84 C88 87 87 92 83 92 C80 91 81 86 85 84 Z" fill="url(#sealGoldGrad)" opacity="0.85" />
+                      <path d="M77 92 C79 96 76 100 72 99 C69 97 72 92 77 92 Z" fill="url(#sealGoldGrad)" opacity="0.85" />
+
+                      {/* Top Royal Floret / Mini Crown */}
+                      <path d="M57 24 L60 19 L63 24 L67 21 L65 26 L55 26 L53 21 Z" fill="url(#sealGoldGrad)" opacity="0.9" />
+
+                      {/* Ornate Calligraphic Letters: M & B */}
+                      <text
+                        x="43"
+                        y="68"
+                        fontFamily="'Cinzel', 'Playfair Display', serif"
+                        fontSize="34"
+                        fontWeight="700"
+                        fontStyle="italic"
+                        fill="url(#sealGoldGrad)"
+                        textAnchor="middle"
+                        filter="url(#sealEmbossFilter)"
+                        letterSpacing="-1"
+                      >
+                        M
+                      </text>
+
+                      {/* Center Calligraphic Romantic Ampersand */}
+                      <text
+                        x="60"
+                        y="65"
+                        fontFamily="'Great Vibes', cursive"
+                        fontSize="22"
+                        fill="url(#sealGoldGrad)"
+                        textAnchor="middle"
+                        filter="url(#sealEmbossFilter)"
+                        opacity="0.95"
+                      >
+                        &amp;
+                      </text>
+
+                      <text
+                        x="77"
+                        y="68"
+                        fontFamily="'Cinzel', 'Playfair Display', serif"
+                        fontSize="34"
+                        fontWeight="700"
+                        fontStyle="italic"
+                        fill="url(#sealGoldGrad)"
+                        textAnchor="middle"
+                        filter="url(#sealEmbossFilter)"
+                        letterSpacing="-1"
+                      >
+                        B
+                      </text>
+
+                      {/* Bottom Flourish & Year */}
+                      <circle cx="60" cy="80" r="1.5" fill="url(#sealGoldGrad)" />
+                      <path d="M50 80 H57 M63 80 H70" stroke="url(#sealGoldGrad)" strokeWidth="0.8" opacity="0.75" />
+                      <text
+                        x="60"
+                        y="91"
+                        fontFamily="'Cinzel', serif"
+                        fontSize="7.5"
+                        letterSpacing="2.5"
+                        fontWeight="700"
+                        fill="url(#sealGoldGrad)"
+                        textAnchor="middle"
+                        opacity="0.9"
+                        filter="url(#sealEmbossFilter)"
+                      >
+                        2026
+                      </text>
+                    </svg>
                   </div>
 
                   {/* Pulsing glow halo on mobile & desktop */}
