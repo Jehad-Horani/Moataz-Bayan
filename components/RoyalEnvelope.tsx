@@ -334,50 +334,27 @@ export default function RoyalEnvelope({ isOpen, onOpenComplete }: RoyalEnvelopeP
                       {/* Top Royal Floret / Mini Crown */}
                       <path d="M57 24 L60 19 L63 24 L67 21 L65 26 L55 26 L53 21 Z" fill="url(#sealGoldGrad)" opacity="0.9" />
 
-                      {/* Ornate Calligraphic Letters: M & B */}
-                      <text
-                        x="43"
-                        y="68"
-                        fontFamily="'Cinzel', 'Playfair Display', serif"
-                        fontSize="34"
-                        fontWeight="700"
-                        fontStyle="italic"
+                      {/* Pure Vector Ornate Monogram: M & B (Deterministic, Zero Overlap on All Devices) */}
+                      {/* Letter M */}
+                      <path
+                        d="M 31 70 L 31 68.5 C 32.5 68.5 33.5 67.5 33.5 66 L 33.5 53 C 33.5 51.5 32.5 50.5 31 50.5 L 31 49 L 36.5 49 L 40 62 L 43.5 49 L 49 49 L 49 50.5 C 47.5 50.5 46.5 51.5 46.5 53 L 46.5 66 C 46.5 67.5 47.5 68.5 49 68.5 L 49 70 L 43 70 L 43 68.5 C 44.5 68.5 45.5 67.5 45.5 66 L 45.5 54 L 41 69 L 39 69 L 34.5 54 L 34.5 66 C 34.5 67.5 35.5 68.5 37 68.5 L 37 70 Z"
                         fill="url(#sealGoldGrad)"
-                        textAnchor="middle"
                         filter="url(#sealEmbossFilter)"
-                        letterSpacing="-1"
-                      >
-                        M
-                      </text>
+                      />
 
-                      {/* Center Calligraphic Romantic Ampersand */}
-                      <text
-                        x="60"
-                        y="65"
-                        fontFamily="'Great Vibes', cursive"
-                        fontSize="22"
+                      {/* Center Romantic Ampersand & */}
+                      <path
+                        d="M 62.5 66.5 C 61.5 67.5 60 68 58.5 68 C 56.5 68 55 66.5 55 64.5 C 55 62.8 56.2 61.2 58 59.8 C 57 58.5 56.5 57.2 56.5 56 C 56.5 54 58 52.5 60 52.5 C 61.8 52.5 63 53.8 63 55.5 C 63 57.2 61.8 59 60 60.5 L 63 64.5 L 65 62.5 L 65.8 63.3 L 63.2 66 Z M 59.2 59.5 C 60.8 58.2 61.8 56.8 61.8 55.5 C 61.8 54.4 61 53.6 60 53.6 C 59 53.6 57.8 54.5 57.8 56 C 57.8 57 58.3 58.2 59.2 59.5 Z M 57 64 C 57 65.5 58 66.8 59.2 66.8 C 60.2 66.8 61.2 66.2 61.8 65.2 L 58.2 60.8 C 57.4 61.8 57 63 57 64 Z"
                         fill="url(#sealGoldGrad)"
-                        textAnchor="middle"
                         filter="url(#sealEmbossFilter)"
-                        opacity="0.95"
-                      >
-                        &amp;
-                      </text>
+                      />
 
-                      <text
-                        x="77"
-                        y="68"
-                        fontFamily="'Cinzel', 'Playfair Display', serif"
-                        fontSize="34"
-                        fontWeight="700"
-                        fontStyle="italic"
+                      {/* Letter B */}
+                      <path
+                        d="M 71 70 L 71 68.5 C 72.5 68.5 73.5 67.5 73.5 66 L 73.5 53 C 73.5 51.5 72.5 50.5 71 50.5 L 71 49 L 81.5 49 C 84.5 49 87 50.8 87 53.8 C 87 56 85.5 57.8 83.2 58.5 C 86.2 59.2 88 61.5 88 64.5 C 88 68 85 70 81 70 Z M 75 58.5 L 81 58.5 C 83.2 58.5 85 57.2 85 54.5 C 85 52 83.2 50.5 81 50.5 L 75 50.5 Z M 75 68.5 L 81 68.5 C 83.8 68.5 86 67 86 64 C 86 61.2 83.8 59.8 81 59.8 L 75 59.8 Z"
                         fill="url(#sealGoldGrad)"
-                        textAnchor="middle"
                         filter="url(#sealEmbossFilter)"
-                        letterSpacing="-1"
-                      >
-                        B
-                      </text>
+                      />
 
                       {/* Bottom Flourish & Year */}
                       <circle cx="60" cy="80" r="1.5" fill="url(#sealGoldGrad)" />
