@@ -1,0 +1,6 @@
+{
+  "name": "دعوة زفاف معتز وبيان",
+  "description": "دعوة زفاف رقمية فاخرة وتفاعلية للعروسين معتز وبيان مع عداد تنازلي، موسيقى هادئة، موقع الحفل، وتأكيد الحضور.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
